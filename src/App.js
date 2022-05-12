@@ -1,10 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
-import { Box, Button } from '@chakra-ui/react';
+import { ChakraProvider } from '@chakra-ui/react';
+import { Router } from './router/Router';
+import { Home } from './pages/Home';
 
 function App() {
   return (
-    <Box>a</Box>
+    <ChakraProvider>
+      <Router />
+    </ChakraProvider>
   );
 }
 
